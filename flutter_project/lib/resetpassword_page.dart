@@ -81,7 +81,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
-    final isPortrait = mediaQuery.orientation == Orientation.portrait;
+    // final isPortrait = mediaQuery.orientation == Orientation.portrait;
     final screenHeight = mediaQuery.size.height;
 
     return Scaffold(

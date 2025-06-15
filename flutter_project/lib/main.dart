@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/app_theme.dart';
 import 'package:flutter_project/drawer_calendar_page.dart';
-import 'package:flutter_project/drawer_contact_page.dart';
 import 'package:flutter_project/login_page.dart';
-import 'package:flutter_project/signup_page.dart';
 import 'package:flutter_project/forgotpassword_otpverification_page.dart';
 import 'package:flutter_project/forgot_password_page1.dart';
-import 'package:flutter_project/splash_page.dart';
 import 'package:flutter_project/resetpassword_page.dart';
 import 'package:flutter_project/home_page.dart';
-import 'package:flutter_project/drawer_profile_page.dart';
 import 'package:flutter_project/drawer_scanQR_page.dart';
 import 'package:flutter_project/drawer_oldPassword_page.dart';
 void main() {
@@ -24,7 +20,7 @@ class Wavica extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Wavica',
+      title: 'Mentos',
       theme: AppTheme.themeData,
       initialRoute: '/home',
       routes: {
@@ -38,14 +34,6 @@ class Wavica extends StatelessWidget {
         '/enterOldPassword': (context) => const EnterOldPasswordPage(),
         '/resetPassword': (context) => const ResetPasswordPage(),//home page drawer reset password navigation
       },
-      //initialRoute: '/login',
-      // routes: {
-      //   '/login': (context) => LoginPage(),
-      //   '/signup': (context) => SignUpPage(),
-      //   '/forgot-password': (context) => ForgotPasswordPage(),
-      //   '/otp-verification': (context) => OTPVerificationPage(),
-      //   '/reset-password': (context) => ResetPasswordPage(),
-      // },
     );
   }
 }
